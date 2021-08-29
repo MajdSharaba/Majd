@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+
+android:orientation="horizontal"
+app:cardUseCompatPadding="true"
+app:cardCornerRadius="4dp"
+app:cardElevation="4dp"
+android:layout_margin="1dp"
+android:id="@+id/card_id">
+           <RelativeLayout
+            android:id="@+id/singleRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+
+            <ImageView
+                android:id="@+id/userImg"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentTop="true"
+                   android:layout_toRightOf="@+id/userImg"
+                   android:layout_toEndOf="@+id/userImg"
+                   android:id="@+id/lin"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:text="From : "
+                       android:textSize="16sp"
+                       android:textAppearance="?android:textAppearanceLarge"
+                       android:layout_marginTop="6dp"
+                       android:maxLines="1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="8dp"
+                       android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/pNametxt"
+                android:text="User Name"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" />
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/lin"
+                   android:layout_alignLeft="@+id/lin"
+                   android:layout_alignStart="@+id/lin"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:text="To : "
+                       android:textSize="16sp"
+                       android:textAppearance="?android:textAppearanceLarge"
+                       android:layout_marginTop="6dp"
+                       android:maxLines="1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="8dp"
+                       android:layout_marginStart="8dp" />
+
+                   <TextView
+                       android:id="@+id/pJobProfiletxt"
+                       android:text="User Name"
+                       android:textSize="14sp"
+                       android:layout_marginTop="6dp"
+                       android:maxLines="1"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginRight="8dp"
+                      />
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+
+                   android:orientation="vertical">
+
+                   <ImageView
+                       android:id="@+id/isFavourit"
+                       android:layout_width="20dp"
+                       android:layout_gravity="center"
+
+                       android:layout_height="21dp"
+                       android:layout_marginTop="6dp"
+                       android:src="@drawable/heart2"
+                        />
+
+                   <TextView
+                       android:id="@+id/price"
+                       android:textSize="14sp"
+                       android:layout_marginTop="6dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                        />
+               </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_below="@+id/singleRow"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f2f2f2" />
+
+
+
+</com.google.android.material.card.MaterialCardView>

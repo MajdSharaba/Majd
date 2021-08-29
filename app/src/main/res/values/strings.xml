@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Deliveries</string>
+    <string name="detail_lable"> Delivery Details</string>
+</resources>
